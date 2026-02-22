@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/common.css">
+    <link rel="stylesheet" href="/Styles/more.css">
+
+    <script src="/Scripts/more-content.js"></script>
+    
+    <title>Risk</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png"> 
+
+</head>
+<body  class="no-scroll-body">
+    <div id="header-container">
+        <img src="/Assets/Logo.png" alt="Logo" width="70vw" height="70vw"  onclick="window.location = '../home.html'">
+        <div id="header-button-container">
+            <button class="header-buttons" onclick="window.location = '../home.html'">Home</button>
+            <!-- onclick="window.location = './more.html'" -->
+            <div class="dropdown">
+                <button class="header-buttons">More</button>
+                <div class="dropdown-content">
+                    <a onclick="window.location = './application.html'">Application</a>
+                    <a onclick="window.location = './risk.html'">The Risk</a>
+                    <a onclick="window.location = './future.html'">The Future</a>
+                    <a onclick="window.location = './crispr.html'">CRISPR</a>
+                    <a onclick="window.location = './stories.html'">Stories</a>
+                </div>
+            </div>
+            
+            <button class="header-buttons" onclick="window.location = '../about.html'">About</button>
+            <button class="header-buttons" onclick="window.location = '../contact.html'">Contact</button>
+        </div>
+    </div>
+    <div id="screen-container">
+        <div class="content-seperator" id="content-selector-container" style="width: 40vw;">
+            <div style="display: flex;flex-direction: column;">
+                <h1 id="Application-more">The Risk Involved </h1>
+                <span class="sub-sub-heading">in Genetic Engineering</span>
+            </div>
+            <div id="selection-container">
+                <h3 class="selection" id="Environmental-Selector" onclick="switchContent('Environmental-Content','Environmental-Selector')">1. Environmental Impact</h3>
+                <h3 class="selection" id="HealthRisks-Selector" onclick="switchContent('HealthRisks-Content','HealthRisks-Selector')">2. Health Risks</h3>
+                <h3 class="selection" id="GeneticDiversity-Selector" onclick="switchContent('GeneticDiversity-Content','GeneticDiversity-Selector')">3. Genetic Diversity Reduction</h3>
+                <h3 class="selection" id="Socioeconomic-Selector" onclick="switchContent('Socioeconomic-Content','Socioeconomic-Selector')">4. Socioeconomic Issues</h3>
+                <h3 class="selection" id="GeneFlow-Selector" onclick="switchContent('GeneFlow-Content','GeneFlow-Selector')">5. Gene Flow</h3>
+                <h3 class="selection" id="PublicTrust-Selector" onclick="switchContent('PublicTrust-Content','PublicTrust-Selector')">6. Lack of Public Trust </h3>
+            </div>
+        </div>
+        <div class="content-seperator" id="more-content"  style="width: 60vw;">
+            <div class="more-content-container more-content-show" id="Environmental-Content">
+                <h2>Environmental Impact</h2>
+                <p>Genetically modified organisms (GMOs) released into the environment can 
+                    potentially interact with native species, leading to ecological disruption. </p>
+                <img class="images" src="https://geneticliteracyproject.org/wp-content/uploads/elementor/thumbs/gmo-means-definition-pe4viouo27oym1sktv73uate3y6u1njep83k1dr2w8.jpg" width="442" height="230" alt="GeneTherapy">
+                <p>For example, GMO crops may crossbreed with wild relatives, creating hybrid plants 
+                    that have unpredictable characteristics.</p>
+                <button class="learnmore-button" onclick="window.location.href='https://www.niehs.nih.gov/health/topics/science/gene-env/index.cfm'">Environmental Impact Due to Genetics</button>
+            </div>
+            <div class="more-content-container" id="HealthRisks-Content">
+                <h2>Health Risks</h2>
+                <p>There is concern about the potential health risks associated with consuming 
+                    GMOs. While extensive safety testing is conducted, some worry about long-term 
+                    effects on human health, including allergenicity and unintended side effects. </p>
+                <div style="display:flex;flex-direction: row; justify-content: space-between; margin: 30px 0px;">
+                    <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px; margin-left: 40px;">
+                        <img class="images" src="/Assets/Images/Risks.jpeg" width="470" height="300" alt="Dolly">
+                    </div>
+                </div>
+                <p>The first is that genetic engineering can transfer allergens from foods to which people know they are allergic, to foods that they think are safe.</p>
+            </div>
+            <div class="more-content-container" id="GeneticDiversity-Content">
+                <h2>Genetic Diversity Reduction</h2>
+                <p>The widespread adoption of genetically modified crops could reduce genetic 
+                    diversity within crop species. This reduced diversity may make crops more 
+                    susceptible to diseases, pests, and environmental changes. 
+                    </p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img class="images" src="https://www.frontiersin.org/files/Articles/656168/frym-09-656168-HTML-r1/image_m/figure-2.jpg" width="250" height="400" alt="Dolly">
+                    <h4 class="image-title" >Gene therapy is a way of treating or preventing disease by altering the genetic instructions within an individual’s cells.</h4>
+                </div>
+                <p>Low genetic diversity means that there is a limited variety of alleles for genes within that species and so there are not many differences between individuals.</p>
+            </div>
+            <div class="more-content-container" id="Socioeconomic-Content">
+                <h2>Socioeconomic Issues</h2>
+                <p>
+                    Genetic engineering can be expensive, potentially leading to increased inequality in access to its benefits. Small farmers and developing countries may be at a disadvantage if they cannot afford genetically modified seeds or technologies
+                </p>
+                <br><br>
+                <!-- <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img src="https://static.scientificamerican.com/sciam/cache/file/058F72AE-0A48-4578-9767873AAA8A5771_source.jpg?w=590&h=800&4DAFC09C-C496-4E65-9AD586414BC25622" width="450" height="275" alt="Dolly">
+                </div> -->
+                <p>
+                    Adoption of GMOs into seed markets could lead to farmer dependence on corporations that control the price and supply of seeds. The cost of switching from traditional to genetically modified seeds could also lead to increased inequality among farmers, as poorer smallholders will be left behind by their competitors.
+                </p>
+            </div>
+            <div class="more-content-container" id="GeneFlow-Content">
+                <h2>Gene Flow</h2>
+                <p>
+                    Genetic modifications can potentially spread to related species through natural processes like pollination and reproduction. This gene flow can lead to the unintentional alteration of non-target organisms. 
+                </p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img class="images" src="https://ib.bioninja.com.au/_Media/species-diversification_med.jpeg" width="450" height="275" alt="Dolly">
+                </div>
+                <p>
+                    Gene flow is the transfer of genetic material from one population to another. Gene flow can take place between two populations of the same species through migration, and is mediated by reproduction and vertical gene transfer from parent to offspring.
+                </p>
+                <button class="learnmore-button" onclick="window.location.href='https://evolution.berkeley.edu/evolution-101/mechanisms-the-processes-of-evolution/gene-flow/'">Look at the risks of Gene FLow</button>
+            </div>
+            <div class="more-content-container" id="PublicTrust-Content">
+                <h2>Lack of Public Trust</h2>
+                <p>
+                    Some segments of the public have concerns about the transparency and 
+                    trustworthiness of companies and regulatory agencies involved in genetic 
+                    engineering, leading to skepticism and opposition to GMOs.T
+                </p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img src="https://geneticliteracyproject.org/wp-content/uploads/2022/05/mkcleargov-.jpg" width="450" height="275" alt="Dolly">
+                </div>
+                <p>
+                    While 46% of people indicated that they agreed with the statement that 'genome editing in general carries too many risks to be used to tackle global challenges', the public is very positive about its use in specific areas such as human health
+                </p>
+            </div>
+        </div>
+        <!-- <iframe width="559" height="315" style="align-self: center; margin: 40px 0px;" src="https://www.youtube.com/embed/DIM38NlkWEo"></iframe> -->
+    </div>
+</body>
+</html>

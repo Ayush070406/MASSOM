@@ -1,0 +1,14 @@
+Human Gene Bank
+
+A human gene bank collects, stores, and preserves genetic material from individuals for research and medical purposes, enabling researchers to study disease genetics and develop personalized medicine approaches.
+
+Human Genome Bank
+The Human Genome Bank is a collection of DNA samples from voluntary donors, preserving genetic diversity for scientific research. It aids in understanding human evolution, population migration, and genetic diversity, while ensuring donor confidentiality and privacy.
+
+
+Genetic in Organ Transplants
+
+Genetics significantly impacts organ transplantation, affecting compatibility, risk of rejection, effectiveness of immunosuppressive treatments, and long-term outcomes. Understanding these factors is crucial for optimizing compatibility assessment, minimizing rejection risks, tailoring treatments, and enhancing patient care.
+
+Gene Manipulation Before Birth 
+Genetically altered embryos can be achieved by introducing the desired genetic material into the embryo itself, or into the sperm and/or egg cells of the parents; either by delivering the desired genes directly into the cell or using gene-editing technology.

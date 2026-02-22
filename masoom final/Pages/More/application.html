@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/common.css">
+    <link rel="stylesheet" href="/Styles/more.css">
+
+    <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png"> 
+    <!-- <link rel="stylesheet" href="/Styles/about.css"> -->
+
+    <script src="/Scripts/more-content.js"></script>
+    
+    <title>Application</title>
+    
+
+</head>
+<body class="no-scroll-body">
+    <div id="header-container">
+        <img src="/Assets/Logo.png" alt="Logo" width="70vw" height="70vw"  onclick="window.location = '../home.html'">
+        <div id="header-button-container">
+            <button class="header-buttons" onclick="window.location = '../home.html'">Home</button>
+            <!-- onclick="window.location = './more.html'" -->
+            <div class="dropdown">
+                <button class="header-buttons">More</button>
+                <div class="dropdown-content">
+                    <a onclick="window.location = './application.html'">Application</a>
+                    <a onclick="window.location = './risk.html'">The Risk</a>
+                    <a onclick="window.location = './future.html'">The Future</a>
+                    <a onclick="window.location = './crispr.html'">CRISPR</a>
+                    <a onclick="window.location = './stories.html'">Stories</a>
+                </div>
+            </div>
+            
+            <button class="header-buttons" onclick="window.location = '../about.html'">About</button>
+            <button class="header-buttons" onclick="window.location = '../contact.html'">Contact</button>
+        </div>
+    </div>
+    <div id="screen-container">
+        <div class="content-seperator" id="content-selector-container" style="width: 40vw;">
+            <div style="display: flex;flex-direction: column;">
+                <h1 id="Application-more">The Application</h1>
+                <span class="sub-sub-heading">of genetics</span>
+            </div>
+            <div id="selection-container">
+                <h3 class="selection" id="GeneTherapy-Selector" onclick="switchContent('GeneTherapy-Content','GeneTherapy-Selector')">1. Gene therapy</h3>
+                <h3 class="selection" id="EdibleVaccines-Selector" onclick="switchContent('EdibleVaccines-Content','EdibleVaccines-Selector')">2. Production of edible vaccines</h3>
+                <h3 class="selection" id="CureCancer-Selector" onclick="switchContent('CureCancer-Content','CureCancer-Selector')">3. Cure for Cancer</h3>
+                <h3 class="selection" id="GMO-Selector" onclick="switchContent('GMO-Content','GMO-Selector')">4. Develop GMO crops</h3>
+                <h3 class="selection" id="Cloning-Selector" onclick="switchContent('Cloning-Content','Cloning-Selector')">5. Cloning</h3>
+            </div>
+        </div>
+        <div class="content-seperator" id="more-content"  style="width: 60vw;">
+            <div class="more-content-container more-content-show" id="GeneTherapy-Content">
+                <h2>Gene therapy</h2>
+                <p>Genetic Therapies are approaches that treat genetic disorders by providing new DNA to certain cells or correcting the DNA. Gene transfer approaches, also called gene addition, restore the missing function of a faulty or missing gene by adding a new gene to affected cells.</p>
+                <img src="/Assets/Images/GeneTherapy.png" width="442" height="149" alt="GeneTherapy">
+                <p>In the future, genetic therapies may be used to prevent, treat, or cure certain inherited disorders, such as cystic fibrosis, alpha-1 antitrypsin deficiency, hemophilia, beta thalassemia, and sickle cell disease. They also may be used to treat cancers or infections, including HIV.</p>
+                <button class="learnmore-button" onclick="window.location.href='https://www.mayoclinic.org/tests-procedures/gene-therapy/about/pac-20384619?sscid=91k7_2any3&'">Know about Gene Therapy</button>
+            </div>
+            <div class="more-content-container" id="EdibleVaccines-Content">
+                <h2>Production of edible vaccines</h2>
+                <p>All vaccines are genetically modified in a way. A gene may be programmed to produce an antiviral protein in a bacterial cell. Once sealed into the DNA, the bacteria is now effectively re-programmed to replicate this new antiviral protein.</p>
+                <div style="display:flex;flex-direction: row; justify-content: space-around; margin: 30px 0px;">
+                    <iframe width="372.6" height="210" style="align-self: center; margin: 40px 0px; margin-right: 30px;" src="https://www.youtube.com/embed/zBkVCpbNnkU"></iframe>
+                    <img class="images" src="https://www.researchgate.net/profile/Jayaraman-Rajangam/publication/345015165/figure/fig2/AS:952384104706050@1604077473391/Preparation-of-edible-vaccine.png" width="440" height="270" alt="Dolly">
+                </div>
+                <p>Creating edible vaccines involves the genetic engineering approach for the introduction of selected desired genes into plants and then inducing these altered plants to manufacture the encoded proteins. This process is known as “transformation” and the plants altered with new characteristics are called “transgenic plants”. </p>
+            </div>
+            <div class="more-content-container" id="CureCancer-Content">
+                <h2>Cure for Cancer</h2>
+                <p>The idea here is generally to take immune cells from a person with cancer, edit them to be better at attacking the cancer and replace them in the body. With the power of genetics we can programme Killer T cell to be more active and make them active cancer hunters, This will help eradicate cancer from once body.</p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img class="images" src="https://blog.dana-farber.org/insight/wp-content/uploads/2018/04/CAR-T-Cell-Attack-Art.jpg" width="450" height="275" alt="Dolly">
+                    <h4 class="image-title" >Gene therapy is a way of treating or preventing disease by altering the genetic instructions within an individual’s cells.</h4>
+                </div>
+                <p>Currently the cure for cancer using Genetic Engineering the more powerful tool available to mankind to solve medical diseases, is under development and with the development of CRISPR-Cas9 and other technologies. We will be able to cure cancer in the future in no time.</p>
+            </div>
+            <div class="more-content-container" id="GMO-Content">
+                <h2>Develop GMO crops</h2>
+                <p>
+                    Most of the GMO crops grown today were developed to help farmers prevent crop loss. The three most common traits found in GMO crops are:
+                    
+                </p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img class="images" src="https://static.scientificamerican.com/sciam/cache/file/058F72AE-0A48-4578-9767873AAA8A5771_source.jpg?w=590&h=800&4DAFC09C-C496-4E65-9AD586414BC25622" width="450" height="275" alt="Dolly">
+                </div>
+                <p>
+                    For GMO crops that are resistant to insect damage, farmers can apply fewer spray pesticides to protect the crops. GMO crops that are tolerant to herbicides help farmers control weeds without damaging the crops.
+                    <ul style="color:var(--text);font-size: 1.3vw;margin:30px 0px 30px 30px">
+                        <li>Resistance to insect damage</li>
+                        <li>Tolerance to herbicides</li>
+                        <li>Resistance to plant viruses</li>
+                    </ul>
+                </p>
+                <button class="learnmore-button" onclick="window.location.href='https://education.nationalgeographic.org/resource/genetically-modified-organisms/'">Check out the Glory of GMO</button>
+            </div>
+            <div class="more-content-container" id="Cloning-Content">
+                <h2>Cloning</h2>
+                <p>
+                    Cloning allows for the creation of multiple copies of genes, expression of genes, and study of specific genes. To get the DNA fragment into a bacterial cell in a form that will be copied or expressed, the fragment is first inserted into a plasmid.
+                </p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img class="images" src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892031/EducationHub/photos/cloned-beagles.jpg" width="450" height="275" alt="Dolly">
+                </div>
+                <p>
+                    In 1996, Scottish scientists cloned the first animal, a sheep they named Dolly. She was cloned using an udder cell taken from an adult sheep. Since then, scientists have cloned cows, cats, deer, horses, and rabbits.
+                </p>
+                <button class="learnmore-button" onclick="window.location.href='./stories.html'">Check out the first cloned animal DOLLY</button>
+            </div>
+        </div>
+        <!-- <iframe width="559" height="315" style="align-self: center; margin: 40px 0px;" src="https://www.youtube.com/embed/DIM38NlkWEo"></iframe> -->
+    </div>
+</body>
+</html>

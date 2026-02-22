@@ -1,0 +1,197 @@
+:root{
+    --light-text:#dce0e4ce;
+    --text:#eff2f5;
+    --transparent: #00000079;
+    --darker:#0d1013;
+    --dark:#12161a;
+    --med:#1a2128;
+    --contrast:#ffea00;
+    --orange:#ffc847;
+    --light-orange:#ffc847b0;
+}
+
+body{
+    background-color: #17171a;
+    background: url("../Assets/BlackBack.jpg") repeat center center; 
+    background-size: cover;
+
+    /* padding:70px 100px 70px 30px; */
+    display:flex;
+    flex-direction: column;
+
+    animation-name: background-bs;
+    animation-duration: 30s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes background-bs{
+    0% {background-size: 100%;}
+    50% {background-size: 120%;}
+    100% {background-size: 100%;}
+}
+
+#screen-container{
+    display:flex;
+    flex-direction: row;
+    height: 100vh;
+    /* background-color: rgb(15, 15, 18); */
+
+    /* background-color: rgb(16, 16, 18); */
+
+    
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+}
+
+.content-seperator{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content:center;
+    width: 50vw;
+    padding: 50px;
+}   
+
+.text-container{
+    display:flex;
+    flex-direction: column;
+    width: 70vw;
+
+    transition: width 0.5s;
+}
+
+h1,.heading{
+    color: var(--orange);
+    font-size: 4vw;
+
+    padding: 0;
+    /*margin-bottom: 10px;*/
+
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2,.sub-heading{
+    color: var(--orange);
+    font-size: 3vw;
+    margin-bottom:20px;
+    font-family: 'ADLaM Display',cursive;
+}
+
+.sub-sub-heading{
+    color: var(--light-orange);
+    font-size: 1.7vw;
+
+    text-align: right;
+    font-family: 'Varela Round', sans-serif;
+}
+
+p{
+    color: var(--text);
+    font-size: 1.1vw;
+    font-weight: normal;
+    text-align: justify;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* .short{
+    width:70vw;
+} */
+
+ol{
+    color: var(--light-text);
+    font-size: 1vw;
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 30px;
+}
+
+.h-container{
+    display: flex;
+    flex-direction: row;
+    /* width: 50vw; */
+    justify-content:center;
+}
+
+.v-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+#selection-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.selection{
+    color: var(--light-text);
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.selection:hover{
+    color: var(--text);
+    font-weight: 700;
+}
+
+.selected{
+    color: var(--text);
+    font-weight: 700;
+}
+
+.more-content-container{
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    transition:all 2s;
+    /* width: 0px; */
+}
+
+.more-content-container>img{
+    margin: 10px;
+}
+
+.more-content-show{
+    display: flex;
+}
+
+.image-title{
+    color: var(--light-text);
+    margin-top:5px;
+    font-size: 0.8vw;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.learnmore-button{
+    margin-top: 20px;
+    padding: 7px 20px;
+    font-size: 1.2vw;
+    align-self: center;
+
+    background-color: var(--orange);
+    color: #0c0c0c;
+    border-style:solid;
+    border-color: var(--orange);
+
+    border-radius: 5px;
+
+    transition: all 0.3s;
+}
+
+.learnmore-button:hover{
+    background-color: transparent;
+    color: var(--orange);
+}
+
+.images{
+    transition: all 0.3s;
+}
+
+.images:hover{
+    scale: 120%;
+}
+
